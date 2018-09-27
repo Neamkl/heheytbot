@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
 	var channelID = "490245720222203940";
 	
 	if (!öneri){
-		return message.reply("Bir mesaj belirtin! Doğru kullanım: **?öneri <mesaj>**");
+		return message.reply("Bir mesaj belirtin! Doğru kullanım: **?öner <mesaj>**");
 	} else {
 		
 		var embed = new Discord.RichEmbed()
@@ -27,13 +27,13 @@ exports.run = function(client, message, args) {
 
 exports.conf = {
   enabled: true,
-  guildOnly: false,
+  guildOnly: true,
   aliases: ["öner"], 
   permLevel: 0 
 };
 
 exports.help = {
-  name: 'öneri', 
+  name: 'öner', 
   description: "bot hakkındaki önerilerinizi bot sahiplerine ulaştırır", 
-  usage: 'öneri <mesaj>' 
+  usage: 'öner <mesaj>' 
 };
